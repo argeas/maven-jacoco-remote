@@ -5,10 +5,7 @@ pipeline {
         TOMCAT_HOST="172.17.0.1"
         CONN = "marcin@${TOMCAT_HOST}"
     }
-    tools {
-        maven 'mvn_3.5'
-        jdk 'JDK1.8'
-    }
+
     stages{
         stage ('Initialize') {
             steps {
